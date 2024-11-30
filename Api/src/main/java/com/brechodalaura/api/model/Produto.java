@@ -1,4 +1,4 @@
-package model;
+package com.brechodalaura.api.model;
 
 //Usando o jpa para mapear as classes para o banco de dados
 import jakarta.persistence.*;

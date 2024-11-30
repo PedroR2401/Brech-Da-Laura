@@ -1,4 +1,4 @@
-package model;
+package com.brechodalaura.api.model;
 
 import jakarta.persistence.*;
 

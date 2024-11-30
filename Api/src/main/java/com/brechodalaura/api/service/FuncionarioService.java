@@ -1,8 +1,8 @@
-package service;
+package com.brechodalaura.api.service;
 
 
-import model.Funcionario;
-import repository.FuncionarioRepository;
+import com.brechodalaura.api.model.Funcionario;
+import com.brechodalaura.api.repository.FuncionarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

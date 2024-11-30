@@ -1,7 +1,7 @@
-package service;
+package com.brechodalaura.api.service;
 
-import model.Produto;
-import repository.ProdutoRepository;
+import com.brechodalaura.api.model.Produto;
+import com.brechodalaura.api.repository.ProdutoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

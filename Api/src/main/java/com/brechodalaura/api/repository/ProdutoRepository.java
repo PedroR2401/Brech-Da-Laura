@@ -1,6 +1,6 @@
-package repository;
+package com.brechodalaura.api.repository;
 
-import model.Produto;
+import com.brechodalaura.api.model.Produto;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

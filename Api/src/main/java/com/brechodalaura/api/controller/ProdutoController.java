@@ -1,8 +1,8 @@
-package controller;
+package com.brechodalaura.api.controller;
 
 
-import model.Produto;
-import service.ProdutoService;
+import com.brechodalaura.api.model.Produto;
+import com.brechodalaura.api.service.ProdutoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
