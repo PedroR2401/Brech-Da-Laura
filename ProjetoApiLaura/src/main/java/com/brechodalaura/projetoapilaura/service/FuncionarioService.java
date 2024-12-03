@@ -25,7 +25,7 @@ public class FuncionarioService {
 
     public void deletar(Integer id) {
         funcionarioRepository.deleteById(id);
-    }
+    }//gf
 
     // Método para login
     public Funcionario login(String email, String senha) {
