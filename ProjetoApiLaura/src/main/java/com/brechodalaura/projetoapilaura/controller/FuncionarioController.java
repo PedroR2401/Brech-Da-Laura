@@ -16,11 +16,13 @@ public class FuncionarioController {
     @Autowired
     private FuncionarioService funcionarioService;
 
+    //Endpoint para listar funcionarios
     @GetMapping
     public List<Funcionario> listarTodos() {
         return funcionarioService.listarTodos();
     }
 
+    // Endpoint para cadastrar
     @PostMapping
     public ResponseEntity<Funcionario> criar(@RequestBody Funcionario funcionario) {
         return ResponseEntity.ok(funcionarioService.salvar(funcionario));
@@ -37,6 +39,7 @@ public class FuncionarioController {
         }
     }
 
+    // Endpoint para deletar funcionario
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletar(@PathVariable Integer id) {
         funcionarioService.deletar(id);

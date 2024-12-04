@@ -13,10 +13,12 @@ public class ProdutoService {
     @Autowired
     private ProdutoRepository produtoRepository;
 
+    // Metodo para listar todos os produtos
     public List<Produto> listarTodos() {
         return produtoRepository.findAll();
     }
 
+    // Metodo de atualizar produto
     public Produto atualizar(Integer id, Produto produtoAtualizado) {
         Produto produtoExistente = produtoRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Produto não encontrado com id: " + id));
@@ -29,10 +31,12 @@ public class ProdutoService {
         return produtoRepository.save(produtoExistente);
     }
 
+    // Metodo de salvar produto
     public Produto salvar(Produto produto) {
         return produtoRepository.save(produto);
     }
 
+    // Metodo de deletar produto
     public void deletar(Integer id) {
         produtoRepository.deleteById(id);
     }

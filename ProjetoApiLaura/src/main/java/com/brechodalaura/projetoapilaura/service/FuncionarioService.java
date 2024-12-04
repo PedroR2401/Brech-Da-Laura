@@ -15,19 +15,23 @@ public class FuncionarioService {
     @Autowired
     private FuncionarioRepository funcionarioRepository;
 
+
+    // Metodo para listar todos os usuarios
     public List<Funcionario> listarTodos() {
         return funcionarioRepository.findAll();
     }
 
+    // Metodo para cadastrar funcionario
     public Funcionario salvar(Funcionario funcionario) {
         return funcionarioRepository.save(funcionario);
     }
 
+    // Metodo para deletar funcionario
     public void deletar(Integer id) {
         funcionarioRepository.deleteById(id);
-    }//gf
+    }
 
-    // Método para login
+    // Metodo para login
     public Funcionario login(String email, String senha) {
         Optional<Funcionario> funcionario = funcionarioRepository.findByEmail(email);
         if (funcionario.isPresent() && funcionario.get().getSenha().equals(senha)) {
